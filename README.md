@@ -10,17 +10,17 @@
 
 Este repositório contém o protótipo de alta fidelidade e a documentação técnica (Design de Projeto e Relatório Consolidado) para o desenvolvimento do novo site da **Orquestra Popular do Recife (OPR)**.
 
-[cite_start]O projeto foi desenvolvido como trabalho prático da disciplina de **Interação Humano-Computador (IHC)**, com o objetivo de criar uma plataforma digital que seja **acessível**, **funcional** e **representativa** da identidade cultural da OPR[cite: 1169, 1170].
+O projeto foi desenvolvido como trabalho prático da disciplina de **Interação Humano-Computador (IHC)**, com o objetivo de criar uma plataforma digital que seja **acessível**, **funcional** e **representativa** da identidade cultural da OPR.
 
-[cite_start]O foco principal é aprimorar a experiência do usuário (UX) em áreas críticas, como a consulta à agenda de eventos e a integração de colaboradores através de uma nova seção, a "Rede OPR"[cite: 1107].
+O foco principal é aprimorar a experiência do usuário (UX) em áreas críticas, como a consulta à agenda de eventos e a integração de colaboradores através de uma nova seção, a "Rede OPR".
 
 ## ✨ Princípios e Metodologia
 
 [cite_start]O desenvolvimento do design seguiu rigorosamente os princípios da **Engenharia da Usabilidade** e do **Design Centrado no Usuário (DCU)**[cite: 1169]:
 
-* [cite_start]**Metodologia Base:** Ciclo de Vida da Engenharia da Usabilidade[cite: 1101].
-* [cite_start]**Padrões Adotados:** ISO 9241 (Ergonomia da Interação) e Padrões de Acessibilidade (WCAG)[cite: 1143, 1144, 1148].
-* [cite_start]**Design Iterativo:** O desenvolvimento foi conduzido de maneira incremental, por meio da criação de protótipos de baixa, média e alta fidelidade[cite: 1115, 1116, 1158].
+* **Metodologia Base:** Ciclo de Vida da Engenharia da Usabilidade[cite: 1101].
+* **Padrões Adotados:** ISO 9241 (Ergonomia da Interação) e Padrões de Acessibilidade (WCAG)[cite: 1143, 1144, 1148].
+* **Design Iterativo:** O desenvolvimento foi conduzido de maneira incremental, por meio da criação de protótipos de baixa, média e alta fidelidade[cite: 1115, 1116, 1158].
 
 | Objetivo de Usabilidade (CU) | Métrica-Chave | Meta Planejada |
 | :--- | :--- | :--- |
@@ -32,9 +32,9 @@ Este repositório contém o protótipo de alta fidelidade e a documentação té
 
 Este repositório contém os *assets* de design e a documentação que suportam a implementação do front-end.
 
-* [cite_start]**Prototipagem:** O protótipo de média fidelidade foi feito em *wireframes* interativos (ex.: Figma)[cite: 1162].
-* [cite_start]**Consistência:** Um Guia de Estilos define a paleta de cores, tipografia e elementos visuais, garantindo a consistência multicanal (site, redes sociais)[cite: 1131, 1134].
-* [cite_start]**Acessibilidade:** O design incorpora alto contraste, textos alternativos e navegação compatível com leitores de tela[cite: 1149, 1150].
+* **Prototipagem:** O protótipo de média fidelidade foi feito em *wireframes* interativos (ex.: Figma).
+* **Consistência:** Um Guia de Estilos define a paleta de cores, tipografia e elementos visuais, garantindo a consistência multicanal (site, redes sociais).
+* **Acessibilidade:** O design incorpora alto contraste, textos alternativos e navegação compatível com leitores de tela.
 
 ## 📂 Estrutura do Repositório
 
