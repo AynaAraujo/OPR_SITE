@@ -1,16 +1,56 @@
-# React + Vite
+# 🎼 Novo Site da Orquestra Popular do Recife (OPR)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Protótipo%20Finalizado-success" alt="Status do Projeto">
+  <img src="https://img.shields.io/badge/Disciplina-IHC%20(Interação%20Humano--Computador)-blueviolet" alt="Disciplina">
+  <img src="https://img.shields.io/badge/Padrão-ISO%209241%20%7C%20WCAG-blue" alt="Padrões">
+</p>
 
-Currently, two official plugins are available:
+## 📝 Visão Geral do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este repositório contém o protótipo de alta fidelidade e a documentação técnica (Design de Projeto e Relatório Consolidado) para o desenvolvimento do novo site da **Orquestra Popular do Recife (OPR)**.
 
-## React Compiler
+[cite_start]O projeto foi desenvolvido como trabalho prático da disciplina de **Interação Humano-Computador (IHC)**, com o objetivo de criar uma plataforma digital que seja **acessível**, **funcional** e **representativa** da identidade cultural da OPR[cite: 1169, 1170].
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[cite_start]O foco principal é aprimorar a experiência do usuário (UX) em áreas críticas, como a consulta à agenda de eventos e a integração de colaboradores através de uma nova seção, a "Rede OPR"[cite: 1107].
 
-## Expanding the ESLint configuration
+## ✨ Princípios e Metodologia
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[cite_start]O desenvolvimento do design seguiu rigorosamente os princípios da **Engenharia da Usabilidade** e do **Design Centrado no Usuário (DCU)**[cite: 1169]:
+
+* [cite_start]**Metodologia Base:** Ciclo de Vida da Engenharia da Usabilidade[cite: 1101].
+* [cite_start]**Padrões Adotados:** ISO 9241 (Ergonomia da Interação) e Padrões de Acessibilidade (WCAG)[cite: 1143, 1144, 1148].
+* [cite_start]**Design Iterativo:** O desenvolvimento foi conduzido de maneira incremental, por meio da criação de protótipos de baixa, média e alta fidelidade[cite: 1115, 1116, 1158].
+
+| Objetivo de Usabilidade (CU) | Métrica-Chave | Meta Planejada |
+| :--- | :--- | :--- |
+| **Eficácia** (Localizar Eventos) | [cite_start]Taxa de Sucesso na Localização de Eventos[cite: 1122]. | [cite_start]95% dos usuários em menos de 1 minuto (ou em até 3 cliques)[cite: 1123]. |
+| **Eficiência** (Cadastro Rede OPR) | [cite_start]Tempo para Cadastro na Rede OPR[cite: 1119]. | [cite_start]Abaixo de 3 minutos[cite: 1120]. |
+| **Satisfação** (Galeria de Mídia) | [cite_start]Nota média em Questionário de Satisfação[cite: 1125, 1126]. | [cite_start]Nota média de 4,5[cite: 1126]. |
+
+## 🛠️ Tecnologias e Implementação
+
+Este repositório contém os *assets* de design e a documentação que suportam a implementação do front-end.
+
+* [cite_start]**Prototipagem:** O protótipo de média fidelidade foi feito em *wireframes* interativos (ex.: Figma)[cite: 1162].
+* [cite_start]**Consistência:** Um Guia de Estilos define a paleta de cores, tipografia e elementos visuais, garantindo a consistência multicanal (site, redes sociais)[cite: 1131, 1134].
+* [cite_start]**Acessibilidade:** O design incorpora alto contraste, textos alternativos e navegação compatível com leitores de tela[cite: 1149, 1150].
+
+## 📂 Estrutura do Repositório
+
+| Diretório/Arquivo | Conteúdo |
+| :--- | :--- |
+| `docs/` | Documentação oficial do projeto (Design de Projeto e Relatório Consolidado). |
+| `prototipo/` | Assets de Design e Imagens de referência. |
+
+## 👥 Desenvolvedores
+
+O projeto foi realizado pelos alunos:
+
+* **Ayna Mariah**
+* **Igor Balbino**
+
+## 👩‍🏫 Professora
+
+* **Profa. Tarciana**
+    * *Disciplina: Interação Humano-Computador (IHC)*
