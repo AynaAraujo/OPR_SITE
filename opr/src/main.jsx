@@ -1,0 +1,13 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+
+// IMPORTE AS VARIÁVEIS PRIMEIRO - caminho absoluto
+import '/src/styles/Variaveis.css'
+import '/src/styles/Global.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
