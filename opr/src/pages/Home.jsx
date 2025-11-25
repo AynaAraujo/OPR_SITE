@@ -70,29 +70,55 @@ export default function Home() {
         <h2>Entre em Contato</h2>
         <p>Envie uma mensagem para a Orquestra Popular do Recife. Retornaremos o mais breve possível!</p>
 
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <form 
+          className="contact-form" 
+          onSubmit={async (e) => {
+            e.preventDefault();
 
+            const nome = e.target.nome.value;
+            const email = e.target.email.value;
+            const mensagem = e.target.mensagem.value;
+
+            const response = await fetch('http://localhost:3000/contato', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ nome, email, mensagem })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+              alert("Sua mensagem foi enviada com sucesso!");
+              e.target.reset(); // limpa o formulário
+            } else {
+              alert("Erro: " + data.error);
+            }
+          }}
+        >
           <input 
             type="text"
+            name="nome"
             placeholder="Seu nome"
             required
           />
 
           <input 
             type="email"
+            name="email"
             placeholder="Seu email"
             required
           />
 
           <textarea 
+            name="mensagem"
             placeholder="Sua mensagem"
             rows="5"
             required
           />
 
           <button type="submit">Enviar Mensagem</button>
-
         </form>
+
 
         <p className="email-direct">
           Ou envie diretamente para:  
