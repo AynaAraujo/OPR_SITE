@@ -43,14 +43,91 @@ Este repositório contém os *assets* de design e a documentação que suportam 
 | `docs/` | Documentação oficial do projeto (Design de Projeto e Relatório Consolidado). |
 | `prototipo/` | Assets de Design e Imagens de referência. |
 
+## 🚀 Como Rodar o Projeto (Front-end + Back-end)
+
+A aplicação está dividida em:
+
+- **Frontend** (React + Vite)
+- **Backend** (Node.js + Express + SQLite)
+
+### 🔧 Pré-requisitos
+
+Certifique-se de ter instalado no Windows:
+
+- **Node.js** (versão 18+)
+- **npm** (vem junto com o Node)
+- **Git** (opcional, mas recomendado)
+
+---
+
+## ▶️ **1. Rodando o Front-end**
+
+1. Abra um terminal dentro da pasta do projeto:
+   
+cd opr
+
+2. Instale as dependências:
+
+npm install
+
+
+3. Execute o servidor de desenvolvimento:
+
+npm run dev
+
+
+📌 O site ficará disponível em:
+
+👉 http://localhost:5173
+
+---
+
+## ▶️ **2. Rodando o Back-end (API + SQLite)**
+
+1. Entre na pasta do backend:
+
+cd backend
+
+
+2. Instale as dependências:
+
+npm install
+
+
+3. Inicie o servidor:
+
+node server.js
+
+
+📌 A API ficará disponível em:
+
+👉 http://localhost:3000
+
+---
+
+## ▶️ **3. Rodando Front e Back ao mesmo tempo**
+
+No Windows, você pode abrir **dois terminais** no VS Code:
+
+- Terminal 1 → `npm run dev`
+- Terminal 2 → `node backend/server.js`
+
+Ou, se preferir:
+
+📌 Clique em **Terminal > New Terminal** para abrir vários.
+
+---
+
+
 ## 👥 Desenvolvedores
 
-O projeto foi realizado pelos alunos:
-
-* **Ayna Mariah**
+* **Ayna Mariah**  
 * **Igor Balbino**
+
+---
 
 ## 👩‍🏫 Professora
 
-* **Profa. Tarciana**
-    * *Disciplina: Interação Humano-Computador (IHC)*
+* **Profa. Tarciana**  
+  *Disciplina: Interação Humano-Computador (IHC)*
+
