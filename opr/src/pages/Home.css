@@ -139,6 +139,82 @@
   color: #444;
 }
 
+/* ======================= CONTATO ======================= */
+.home-contact {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 40px 10%;
+  background: #f5e9c8;
+  border-radius: 10px;
+}
+
+.home-contact h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #b20404;
+}
+
+.home-contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b20404;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #b20404;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #7d0000;
+}
+
+.email-direct {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.email-direct a {
+  color: #b20404;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-direct a:hover {
+  text-decoration: underline;
+}
+
+
 /* ======================= RESPONSIVIDADE ======================= */
 @media (max-width: 900px) {
   .home-hero {

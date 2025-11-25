@@ -65,6 +65,43 @@ export default function Home() {
         </p>
       </div>
 
+       {/* CONTATO */}
+      <div className="home-contact">
+        <h2>Entre em Contato</h2>
+        <p>Envie uma mensagem para a Orquestra Popular do Recife. Retornaremos o mais breve possível!</p>
+
+        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+
+          <input 
+            type="text"
+            placeholder="Seu nome"
+            required
+          />
+
+          <input 
+            type="email"
+            placeholder="Seu email"
+            required
+          />
+
+          <textarea 
+            placeholder="Sua mensagem"
+            rows="5"
+            required
+          />
+
+          <button type="submit">Enviar Mensagem</button>
+
+        </form>
+
+        <p className="email-direct">
+          Ou envie diretamente para:  
+          <a href="mailto:orquestrapopulardorecife@gmail.com">
+            orquestrapopulardorecife@gmail.com
+          </a>
+        </p>
+      </div>
+
     </section>
   )
 }
