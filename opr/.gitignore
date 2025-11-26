@@ -25,6 +25,10 @@ dist-ssr
 
 venv
 
-src/assets
+src/assets/videos/
+
+
+# Ignorar vídeos
+*.mp4
 
 backend/opr.db
