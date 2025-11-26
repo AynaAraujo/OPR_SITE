@@ -25,6 +25,6 @@ dist-ssr
 
 venv
 
-OPR/src/assets
+src/assets
 
 backend/opr.db
