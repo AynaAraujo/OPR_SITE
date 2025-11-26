@@ -6,6 +6,7 @@ import Agenda from './pages/Agenda'
 import Galeria from './pages/Galeria'
 import Institucional from './pages/Institucional'
 import Login from './pages/Login'
+import Admin from './pages/Admin'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/institucional" element={<Institucional />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
       <Footer />
