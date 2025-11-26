@@ -25,4 +25,6 @@ dist-ssr
 
 venv
 
+*.mp4
+
 backend/opr.db
