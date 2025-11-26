@@ -122,9 +122,15 @@ export default function Home() {
 
         <p className="email-direct">
           Ou envie diretamente para:  
-          <a href="mailto:orquestrapopulardorecife@gmail.com">
-            orquestrapopulardorecife@gmail.com
+          <a href="mailto:orqpopulardorecife@gmail.com">
+            orqpopulardorecife@gmail.com
           </a>
+          <p>
+            <a href="mailto:pluralprojetos.pe@gmail.com">
+              pluralprojetos.pe@gmail.com
+            </a>
+          </p>
+          
         </p>
       </div>
 

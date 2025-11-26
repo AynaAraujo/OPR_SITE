@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Agenda from './pages/Agenda'
 import Galeria from './pages/Galeria'
 import Institucional from './pages/Institucional'
+import Login from './pages/Login'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/agenda" element={<Agenda />} />
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/institucional" element={<Institucional />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />

@@ -11,6 +11,7 @@ export default function Header() {
             <li><Link to="/agenda">Agenda</Link></li>
             <li><Link to="/galeria">Galeria</Link></li>
             <li><Link to="/institucional">Institucional</Link></li>
+            <li><Link to="/login">Login</Link></li>
           </ul>
         </nav>
       </div>
