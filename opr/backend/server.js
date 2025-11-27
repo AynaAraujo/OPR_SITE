@@ -1,49 +1,32 @@
 // server.js
 const express = require('express');
 const cors = require('cors');
-const sqlite3 = require('sqlite3').verbose();
+
+// IMPORTAR O BANCO CORRETAMENTE!
+const db = require('./database');
+
 const eventsRoutes = require('./routes/events');
 const authRoutes = require('./routes/auth');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Rotas de autenticação
 app.use('/auth', authRoutes);
 
-// ================================
-// 1. CONEXÃO COM O SQLITE
-// ================================
-const db = new sqlite3.Database('./banco.sqlite', (err) => {
-  if (err) {
-    console.error("Erro ao conectar ao SQLite:", err.message);
-  } else {
-    console.log("SQLite conectado com sucesso!");
-  }
-});
-
-// ================================
-// 2. CRIAÇÃO DA TABELA DE CONTATOS
-// ================================
-db.run(`
-  CREATE TABLE IF NOT EXISTS contatos (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT NOT NULL,
-    email TEXT NOT NULL,
-    mensagem TEXT NOT NULL,
-    data_envio DATETIME DEFAULT CURRENT_TIMESTAMP
-  )
-`);
-
-// ================================
-// 3. ROTAS
-// ================================
+// Rotas de eventos
 app.use('/events', eventsRoutes);
 
+// ROTA TESTE
 app.get('/', (req, res) => {
   res.send('API da OPR funcionando 🚀');
 });
 
-// ROTA: Receber mensagens de contato
+
+// ================================
+// 📩 Rota: Receber mensagens de contato
+// ================================
 app.post('/contato', (req, res) => {
   const { nome, email, mensagem } = req.body;
 
@@ -61,7 +44,8 @@ app.post('/contato', (req, res) => {
     return res.json({ message: "Mensagem enviada com sucesso!" });
   });
 });
-// ROTA: Listar mensagens de contato
+
+// 📩 Rota: Listar mensagens de contato
 app.get('/contato', (req, res) => {
   const query = `SELECT * FROM contatos ORDER BY data_envio DESC`;
 
@@ -75,9 +59,8 @@ app.get('/contato', (req, res) => {
   });
 });
 
-
 // ================================
-// 4. INICIALIZAR O SERVIDOR
+// Servidor
 // ================================
 const PORT = 3000;
 app.listen(PORT, () => {
