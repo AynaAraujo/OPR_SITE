@@ -10,16 +10,17 @@ export default function Admin() {
   const [editId, setEditId] = useState(null)
 
   // 👉 Verificar se o usuário está logado
-  useEffect(() => {
-    const token = localStorage.getItem("token")
-    if (!token) {
-      alert("Acesso não autorizado!")
-      window.location.href = "/login"
-      return
-    }
+useEffect(() => {
+  const isLogged = localStorage.getItem("adm_logado")
+  if (!isLogged) {
+    alert("Acesso não autorizado!")
+    window.location.href = "/login"
+    return
+  }
 
-    listarEventos()
-  }, [])
+  listarEventos()
+}, [])
+
 
   // 🔵 LISTAR
   const listarEventos = async () => {
